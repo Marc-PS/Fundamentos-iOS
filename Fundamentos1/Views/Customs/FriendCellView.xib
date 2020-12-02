@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="317" id="m17-k4-Zip">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m17-k4-Zip" id="ubd-h9-4VP">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRB-cJ-gXs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ddd-BO-sUk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2pJ-cn-c43">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2pJ-cn-c43" secondAttribute="height" multiplier="1:1" id="WD1-k7-fZI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMR-Z9-Kzr">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="138"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRW-8m-aFk">
+                                                <rect key="frame" x="25" y="25" width="58" height="18"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W7" family="Hiragino Sans" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lastname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zv-3X-tpe">
+                                                <rect key="frame" x="25" y="48" width="84.5" height="16"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="1zv-3X-tpe" firstAttribute="leading" secondItem="BMR-Z9-Kzr" secondAttribute="leading" constant="25" id="fYV-Mp-lrW"/>
+                                            <constraint firstItem="eRW-8m-aFk" firstAttribute="top" secondItem="BMR-Z9-Kzr" secondAttribute="top" constant="25" id="mW4-cT-NEu"/>
+                                            <constraint firstItem="1zv-3X-tpe" firstAttribute="top" secondItem="eRW-8m-aFk" secondAttribute="bottom" constant="5" id="rAV-9X-3Q9"/>
+                                            <constraint firstItem="eRW-8m-aFk" firstAttribute="leading" secondItem="BMR-Z9-Kzr" secondAttribute="leading" constant="25" id="rU6-KC-Al5"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1n-w3-lxI">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="138"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="34"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2pJ-cn-c43" firstAttribute="top" secondItem="Ddd-BO-sUk" secondAttribute="top" id="0OL-No-zMQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="i1n-w3-lxI" secondAttribute="trailing" id="1YX-BI-dj9"/>
+                                    <constraint firstItem="BMR-Z9-Kzr" firstAttribute="top" secondItem="Ddd-BO-sUk" secondAttribute="top" id="T1v-HM-j5c"/>
+                                    <constraint firstItem="2pJ-cn-c43" firstAttribute="leading" secondItem="Ddd-BO-sUk" secondAttribute="leading" id="UKK-9g-iYo"/>
+                                    <constraint firstItem="i1n-w3-lxI" firstAttribute="top" secondItem="Ddd-BO-sUk" secondAttribute="top" id="myT-UJ-tyy"/>
+                                    <constraint firstAttribute="bottom" secondItem="i1n-w3-lxI" secondAttribute="bottom" id="uPM-3J-UUw"/>
+                                    <constraint firstAttribute="bottom" secondItem="2pJ-cn-c43" secondAttribute="bottom" id="uiG-kA-9el"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ddd-BO-sUk" firstAttribute="top" secondItem="hRB-cJ-gXs" secondAttribute="top" id="SfN-Z4-k57"/>
+                            <constraint firstItem="Ddd-BO-sUk" firstAttribute="leading" secondItem="hRB-cJ-gXs" secondAttribute="leading" id="Vhs-7l-LLe"/>
+                            <constraint firstAttribute="bottom" secondItem="Ddd-BO-sUk" secondAttribute="bottom" id="aSB-El-qBY"/>
+                            <constraint firstAttribute="trailing" secondItem="Ddd-BO-sUk" secondAttribute="trailing" id="xs4-ka-M2c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hRB-cJ-gXs" secondAttribute="bottom" id="3Uj-GC-BXl"/>
+                    <constraint firstItem="hRB-cJ-gXs" firstAttribute="leading" secondItem="ubd-h9-4VP" secondAttribute="leading" id="DBB-He-gNN"/>
+                    <constraint firstAttribute="trailing" secondItem="hRB-cJ-gXs" secondAttribute="trailing" id="j6G-Z7-MJv"/>
+                    <constraint firstItem="hRB-cJ-gXs" firstAttribute="top" secondItem="ubd-h9-4VP" secondAttribute="top" id="uqv-Rx-hcu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="265.94202898550725" y="49.21875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
